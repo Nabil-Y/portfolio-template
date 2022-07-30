@@ -1,0 +1,40 @@
+---
+  title: "Test"
+  slug: 'test'
+  date: "2022-07-28"
+  author: "Nabil-Y"
+  description: "test description"
+  image: "/static/nabil.png"
+  keywords: "hello, test3, test4"
+---
+
+import ThemeSwitch from "../components/UI/ThemeSwitch.tsx";
+import Link from "next/link";
+
+# My MDX page
+
+This is a list in markdown:
+
+- One
+- Two
+- Three
+
+```ts
+// File: index.ts
+
+import lol from "@types/lol";
+
+const hype: string = "lol";
+
+function hyperbeam(param: string): string {
+  return "hyperbeam" + param;
+}
+
+hyperbeam("snorlax");
+
+// OUTPUT: hyperbeam snorlax
+```
+
+<ThemeSwitch />
+
+<Link href="/">Go Home</Link>
