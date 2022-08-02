@@ -13,7 +13,7 @@
 
   h1,
   .prose h1 {
-    @apply inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+    @apply inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent contrast-125;
   }
 
   .prose a {
@@ -155,4 +155,12 @@ pre[class*="language-"] {
 
 .token.namespace {
   opacity: 0.7;
+}
+
+.rehype-code-title {
+  @apply rounded-t-lg border-b-4 border-b-grey bg-[#27212E] px-5 py-3 font-mono font-bold text-white;
+}
+
+.rehype-code-title + pre {
+  @apply mt-0 rounded-t-none;
 }
