@@ -5,7 +5,7 @@ const HamburgerIcon = () => {
       className="h-6 w-6"
       fill="none"
       viewBox="0 0 24 24"
-      stroke="#171717"
+      stroke="currentColor"
       strokeWidth={2}
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 16h16" />

@@ -17,21 +17,23 @@ const MobileMenu = () => {
   return (
     <div>
       <nav className="block sm:hidden">
-        <Button
+        <div
           onClick={() => {
             setIsMenuOpen((prevState) => !prevState);
           }}
+          className="cursor-pointer p-2"
+          role={"button"}
         >
           {!isMenuOpen && <HamburgerIcon />}
           {isMenuOpen && <CloseIcon />}
-        </Button>
+        </div>
       </nav>
       {isMenuOpen && (
         <nav className="fixed left-0 z-10 h-full w-full bg-white p-4 dark:bg-black">
           <ul className="max-w-[200px]">
             {Object.keys(navTitles).map((title) => (
               <Link key={title} href={navTitles[title]}>
-                <li>{title}</li>
+                <li className="animate-appear">{title}</li>
               </Link>
             ))}
           </ul>

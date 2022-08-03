@@ -5,7 +5,7 @@ const Button = (props: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className="rounded-lg bg-greyLight p-3 hover:bg-grey"
+      className="rounded-lg bg-greyLight p-2 hover:bg-grey dark:bg-greyDark dark:hover:bg-grey"
     >
       {children}
     </button>

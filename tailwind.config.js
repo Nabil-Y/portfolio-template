@@ -15,9 +15,18 @@ module.exports = {
         secondary: "#30BAF7",
         black: "#171717",
         white: "#F8FAFC",
-        grey: "#AEAEAE",
-        greyLight: "#DBDBDB",
-        greyDark: "#373737",
+        grey: "#BBBBBB",
+        greyLight: "#EBEBEB",
+        greyDark: "#494949",
+      },
+      animation: {
+        appear: "appearance 0.2s linear",
+      },
+      keyframes: {
+        appearance: {
+          "0%": { transform: "translateY(16px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
       },
     },
   },

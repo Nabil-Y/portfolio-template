@@ -1,8 +1,7 @@
-import ProfileIcon from "../../UI/Icons/ProfileIcon";
+import ProfilePicture from "../../UI/ProfilePicture";
 import ThemeSwitch from "../../UI/ThemeSwitch";
 import HeaderNav from "./HeaderNav";
 import MobileMenu from "./MobileMenu";
-import Link from "next/link";
 
 const Header = () => {
   return (
@@ -11,7 +10,7 @@ const Header = () => {
         Skip to main content
       </a>
       <div className="flex flex-col items-center">
-        <ProfileIcon />
+        <ProfilePicture />
         <div className="my-4 flex w-full justify-between">
           <MobileMenu />
           <HeaderNav />
