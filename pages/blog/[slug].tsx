@@ -3,7 +3,7 @@ import { getAllPostsPaths, getPostData } from "../../libs/posts";
 import { mdxToHtml } from "../../libs/mdx";
 import { components } from "../../components/MDX/MDXcomponents";
 import { MDXRemote } from "next-mdx-remote";
-import PostLayout from "../../components/Layouts/PostLayout";
+import BaseContainer from "../../components/Layouts/BaseContainer";
 import { BlogPostProps } from "../../types/types";
 
 const BlogPost = (props: BlogPostProps) => {
@@ -11,15 +11,23 @@ const BlogPost = (props: BlogPostProps) => {
   const { html, readingTime } = props;
 
   return (
-    <PostLayout
-      title={title}
+    <BaseContainer
+      title={`${title} – Nabil Yassine`}
       description={description}
       image={image}
-      date={date}
-      readingTime={readingTime}
+      date={new Date(date).toLocaleDateString()}
+      type="article"
     >
-      <MDXRemote {...html} components={components} />
-    </PostLayout>
+      <h1 className="pb-6">{title}</h1>
+
+      <div className="flex justify-between text-greyDark dark:text-grey">
+        <div>Nabil-Y / {date}</div> <div>{readingTime}</div>
+      </div>
+
+      <div className="prose pt-12 dark:prose-invert">
+        <MDXRemote {...html} components={components} />
+      </div>
+    </BaseContainer>
   );
 };
 

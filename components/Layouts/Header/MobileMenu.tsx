@@ -14,13 +14,15 @@ const MobileMenu = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
   return (
     <div>
       <nav className="block sm:hidden">
         <div
-          onClick={() => {
-            setIsMenuOpen((prevState) => !prevState);
-          }}
+          onClick={toggleMenu}
           className="cursor-pointer p-2"
           role={"button"}
         >
@@ -33,7 +35,9 @@ const MobileMenu = () => {
           <ul className="max-w-[200px]">
             {Object.keys(navTitles).map((title) => (
               <Link key={title} href={navTitles[title]}>
-                <li className="animate-appear">{title}</li>
+                <li className="animate-appear" onClick={toggleMenu}>
+                  {title}
+                </li>
               </Link>
             ))}
           </ul>

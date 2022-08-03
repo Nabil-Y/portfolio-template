@@ -15,15 +15,6 @@ export interface BaseContainerProps {
   type?: string;
 }
 
-export interface PostLayoutProps {
-  children: ReactNode;
-  title: string;
-  description: string;
-  image: string;
-  date: string;
-  readingTime: string;
-}
-
 export interface BlogPostProps {
   children: ReactNode;
   html: MDXRemoteSerializeResult<
