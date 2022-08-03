@@ -21,9 +21,11 @@ const BlogPost = (props: BlogPostProps) => {
       <article>
         <h1 className="pb-6">{title}</h1>
 
-        <div className="flex justify-between text-greyDark dark:text-grey">
-          <div>Nabil-Y / {date}</div> <div>{readingTime}</div>
-        </div>
+        {title !== "About me" && (
+          <div className="flex justify-between text-greyDark dark:text-grey">
+            <div>Nabil-Y / {date}</div> <div>{readingTime}</div>
+          </div>
+        )}
 
         <div className="prose pt-12 dark:prose-invert">
           <MDXRemote {...html} components={components} />

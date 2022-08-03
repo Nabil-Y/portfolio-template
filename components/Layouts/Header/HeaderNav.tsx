@@ -5,7 +5,7 @@ const HeaderNav = () => {
     Home: "/",
     Projects: "/projects",
     Blog: "/blog",
-    About: "/about",
+    About: "/blog/about",
   };
 
   return (

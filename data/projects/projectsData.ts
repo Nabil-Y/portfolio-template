@@ -1,6 +1,6 @@
 import { Project } from "../../types/types";
 
-export const projects: Project[] = [
+export const projectsData: Project[] = [
   {
     repoLink: "Nabil_Yassine_14_13062022",
     demoLink: "https://nabil-yassine-14-13062022.vercel.app/",

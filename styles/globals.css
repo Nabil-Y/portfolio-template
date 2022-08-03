@@ -29,8 +29,8 @@
     @apply text-3xl font-bold;
   }
 
-  .prose a {
-    @apply no-underline;
+  a {
+    @apply inline-block font-bold;
   }
 
   img {

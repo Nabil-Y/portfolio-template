@@ -17,7 +17,10 @@ const BlogHomePage = (props: BlogHomePageProps) => {
   );
 
   return (
-    <BaseContainer>
+    <BaseContainer
+      title="Blog - Nabil Yassine"
+      description="Here is my blog where I write about React, TypeScript, frontend and all things web dev"
+    >
       <h1>Blog</h1>
       <SearchInput
         name="search-blog-post"
@@ -41,7 +44,9 @@ const BlogHomePage = (props: BlogHomePageProps) => {
 };
 
 export const getStaticProps: GetStaticProps = () => {
-  const latestPosts = getAllPostsSorted();
+  const latestPosts = getAllPostsSorted().filter(
+    (post) => post.slug !== "about"
+  );
 
   return {
     props: { posts: latestPosts },

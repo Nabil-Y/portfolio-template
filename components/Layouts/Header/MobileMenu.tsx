@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Button from "../../UI/Button";
 import { useState } from "react";
 import HamburgerIcon from "../../UI/Icons/HamburgerIcon";
 import CloseIcon from "../../UI/Icons/CloseIcon";
@@ -9,7 +8,7 @@ const MobileMenu = () => {
     Home: "/",
     Projects: "/projects",
     Blog: "/blog",
-    About: "/about",
+    About: "/blog/about",
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,21 +47,3 @@ const MobileMenu = () => {
 };
 
 export default MobileMenu;
-
-{
-  /* <ul className="flex">
-        {Object.keys(navTitles).map((title) => (
-          <Link key={title} href={navTitles[title]}>
-            <li
-              className={
-                isActive === navTitles[title]
-                  ? "bg-greyLight dark:bg-greyDark"
-                  : ""
-              }
-            >
-              {title}
-            </li>
-          </Link>
-        ))}
-      </ul> */
-}

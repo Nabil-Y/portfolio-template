@@ -6,8 +6,9 @@ const BaseContainer = (props: BaseContainerProps) => {
   const { children, ...customMeta } = props;
 
   const meta = {
-    title: "Nabil Yassine – Frontend Developer",
-    description: `Front-end developer, React and TypeScript enthusiast, I talk about web dev`,
+    title: "Home - Nabil Yassine",
+    description:
+      "Front-end developer, React and TypeScript enthusiast, I talk about web dev",
     image: "https://nabil-y.com/static/images/nabil.png",
     type: "website",
     ...customMeta,
