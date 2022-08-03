@@ -1,6 +1,8 @@
 import { useState } from "react";
 import BaseContainer from "../components/Layouts/BaseContainer";
 import SearchInput from "../components/Inputs/SearchInput";
+import { projects } from "../data/projects/projects";
+import SingleProject from "../components/Blocks/SingleProject";
 
 const ProjectsPage = () => {
   const [query, setQuery] = useState("");
@@ -14,9 +16,18 @@ const ProjectsPage = () => {
         value={query}
       />
 
-      <p className="">
-        Get started by editing <code>pages/index.tsx</code>
-      </p>
+      {projects.map((project) => (
+        <div key={project.title}>
+          <SingleProject
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            repoLink={project.repoLink}
+            imgLink={project.imgLink}
+            demoLink={project.demoLink}
+          />
+        </div>
+      ))}
     </BaseContainer>
   );
 };

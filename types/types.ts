@@ -39,3 +39,19 @@ export interface SearchInputProps {
   value: string;
   name: string;
 }
+
+export interface SinglePostProps {
+  title: string;
+  slug: string;
+  readingTime: string;
+  description: string;
+}
+
+export interface Project {
+  repoLink: string;
+  demoLink: string;
+  imgLink: string;
+  title: string;
+  description: string;
+  tags: string[];
+}

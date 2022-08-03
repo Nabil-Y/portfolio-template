@@ -18,15 +18,17 @@ const BlogPost = (props: BlogPostProps) => {
       date={new Date(date).toLocaleDateString()}
       type="article"
     >
-      <h1 className="pb-6">{title}</h1>
+      <article>
+        <h1 className="pb-6">{title}</h1>
 
-      <div className="flex justify-between text-greyDark dark:text-grey">
-        <div>Nabil-Y / {date}</div> <div>{readingTime}</div>
-      </div>
+        <div className="flex justify-between text-greyDark dark:text-grey">
+          <div>Nabil-Y / {date}</div> <div>{readingTime}</div>
+        </div>
 
-      <div className="prose pt-12 dark:prose-invert">
-        <MDXRemote {...html} components={components} />
-      </div>
+        <div className="prose pt-12 dark:prose-invert">
+          <MDXRemote {...html} components={components} />
+        </div>
+      </article>
     </BaseContainer>
   );
 };

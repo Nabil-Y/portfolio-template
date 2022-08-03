@@ -6,8 +6,9 @@ const ProfileIcon = () => {
       <Image
         src="/static/nabil.png"
         alt="Nabil Yassine Illustration"
-        width={48}
-        height={48}
+        layout="responsive"
+        width={1}
+        height={1}
       />
     </div>
   );

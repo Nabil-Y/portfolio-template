@@ -25,8 +25,16 @@
     @apply inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text pb-12  text-5xl font-bold text-transparent;
   }
 
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
   .prose a {
     @apply no-underline;
+  }
+
+  img {
+    @apply object-cover;
   }
 }
 

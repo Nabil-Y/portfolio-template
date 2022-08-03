@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
 
-const postsDirectory = path.join(process.cwd(), "posts");
+const postsDirectory = path.join(process.cwd(), "data", "posts");
 
 export const getAllPostsSorted = () => {
   const fileNames = fs.readdirSync(postsDirectory);
@@ -16,8 +16,10 @@ export const getAllPostsSorted = () => {
     return {
       slug,
       date: matterResult.data.date as string,
-      readTime: readingTime(matterResult.content).text,
-      ...matterResult.data,
+      title: matterResult.data.title as string,
+      description: matterResult.data.description as string,
+      image: matterResult.data.image as string,
+      readingTime: readingTime(matterResult.content).text,
     };
   });
 
