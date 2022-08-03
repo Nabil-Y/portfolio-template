@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { BaseContainerProps } from "../../types/types";
-import ThemeSwitch from "../UI/ThemeSwitch";
+import Header from "./Header/Header";
 
 const BaseContainer = (props: BaseContainerProps) => {
   const { children, ...customMeta } = props;
@@ -37,10 +37,8 @@ const BaseContainer = (props: BaseContainerProps) => {
         <meta name="twitter:image" content={meta.image} />
       </Head>
 
-      <header>
-        <ThemeSwitch />
-      </header>
-      <main>{children}</main>
+      <Header />
+      <main id="skipNav">{children}</main>
     </>
   );
 };

@@ -12,8 +12,10 @@ const PostLayout = (props: PostLayoutProps) => {
       date={new Date(date).toLocaleDateString()}
       type="article"
     >
-      <p>{readingTime}</p>
-      <div className="prose dark:prose-invert">{children}</div>
+      <div className="flex justify-between text-greyDark dark:text-grey">
+        <div>Nabil-Y / {date}</div> <div>{readingTime}</div>
+      </div>
+      <div className="prose pt-10 dark:prose-invert">{children}</div>
     </BaseContainer>
   );
 };

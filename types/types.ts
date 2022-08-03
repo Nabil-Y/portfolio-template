@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
 
 export interface ButtonProps {
@@ -37,4 +37,14 @@ export interface BlogPostProps {
     image: string;
     date: string;
   };
+}
+
+export interface BlogHomePageProps {
+  posts: Record<string, string>[];
+}
+
+export interface SearchInputProps {
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  value: string;
+  name: string;
 }

@@ -15,7 +15,7 @@ export const getAllPostsSorted = () => {
 
     return {
       slug,
-      date: matterResult.data.date,
+      date: matterResult.data.date as string,
       readTime: readingTime(matterResult.content).text,
       ...matterResult.data,
     };

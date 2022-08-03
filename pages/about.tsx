@@ -1,9 +1,9 @@
 import BaseContainer from "../components/Layouts/BaseContainer";
 
-const Home = () => {
+const AboutPage = () => {
   return (
     <BaseContainer>
-      <h1>Welcome!</h1>
+      <h1>About me</h1>
 
       <p className="">
         Get started by editing <code>pages/index.tsx</code>
@@ -12,4 +12,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AboutPage;
