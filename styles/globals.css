@@ -9,6 +9,7 @@
 @layer base {
   body {
     @apply animate-appear bg-white font-sora text-sm text-black dark:bg-black dark:text-white sm:text-base;
+    -webkit-tap-highlight-color: transparent;
   }
 
   header,
