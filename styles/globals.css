@@ -39,6 +39,10 @@
   }
 }
 
+.code-highlight {
+  @apply text-xs sm:text-base;
+}
+
 .rehype-code-title {
   @apply rounded-t-lg border-b-4 border-b-grey bg-[#27212E] px-5 py-3 font-mono font-bold text-white;
 }
