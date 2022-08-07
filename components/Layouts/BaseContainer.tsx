@@ -9,7 +9,7 @@ const BaseContainer = (props: BaseContainerProps) => {
     title: "Home - Nabil Yassine",
     description:
       "Front-end developer, React and TypeScript enthusiast, I talk about web dev",
-    image: "https://nabil-y.com/static/images/nabil.png",
+    image: "/static/images/nabil.png",
     type: "website",
     ...customMeta,
   };
