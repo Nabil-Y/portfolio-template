@@ -23,11 +23,15 @@
   }
 
   h1 {
-    @apply inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text pb-12  text-5xl font-bold text-transparent;
+    @apply inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text pb-12  text-4xl font-bold text-transparent sm:text-5xl;
   }
 
   h2 {
-    @apply text-3xl font-bold;
+    @apply text-2xl font-bold sm:text-3xl;
+  }
+
+  h3 {
+    @apply text-base font-bold  sm:text-lg;
   }
 
   a {

@@ -11,8 +11,10 @@ module.exports = {
         sora: ["'Sora'", "sans-serif"],
       },
       colors: {
-        primary: "#F56FB5",
-        secondary: "#30BAF7",
+        // primary: "#F56FB5",
+        // secondary: "#30BAF7",
+        primary: "#DB0F79",
+        secondary: "#067AAC",
         black: "#171717",
         white: "#F8FAFC",
         grey: "#BBBBBB",

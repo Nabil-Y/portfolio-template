@@ -2,11 +2,12 @@ import { useState } from "react";
 import { GetStaticProps } from "next";
 import { getAllPostsSorted } from "../../libs/posts";
 import BaseContainer from "../../components/Layouts/BaseContainer";
-import { BlogHomePageProps } from "../../types/types";
+import { PostsProps } from "../../types/types";
 import SearchInput from "../../components/Inputs/SearchInput";
 import SinglePost from "../../components/Blocks/SinglePost";
+import Image from "next/image";
 
-const BlogHomePage = (props: BlogHomePageProps) => {
+const BlogHomePage = (props: PostsProps) => {
   const { posts } = props;
   const [query, setQuery] = useState("");
 
@@ -22,6 +23,16 @@ const BlogHomePage = (props: BlogHomePageProps) => {
       description="Here is my blog where I write about React, TypeScript, frontend and all things web dev"
     >
       <h1>Blog</h1>
+      <h2 className="sr-only">Latest posts</h2>
+
+      <Image
+        src="/static/blog-img.png"
+        layout="responsive"
+        width={5}
+        height={2}
+        alt=""
+      />
+
       <SearchInput
         name="search-blog-post"
         onChange={(event) => setQuery(event.target.value)}

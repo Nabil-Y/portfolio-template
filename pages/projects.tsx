@@ -3,6 +3,7 @@ import BaseContainer from "../components/Layouts/BaseContainer";
 import SearchInput from "../components/Inputs/SearchInput";
 import { projectsData } from "../data/projects/projectsData";
 import SingleProject from "../components/Blocks/SingleProject";
+import Image from "next/image";
 
 const ProjectsPage = () => {
   const [query, setQuery] = useState("");
@@ -10,7 +11,7 @@ const ProjectsPage = () => {
   const filteredProjects = projectsData.filter(
     (project) =>
       project.title.toLowerCase().includes(query.toLowerCase()) ||
-      project.description.toLowerCase().includes(query.toLowerCase()) ||
+      project.description?.toLowerCase().includes(query.toLowerCase()) ||
       project.tags.some((tag) =>
         tag.toLowerCase().includes(query.toLowerCase())
       )
@@ -22,6 +23,15 @@ const ProjectsPage = () => {
       description="Have a look at all my frontend web dev projects"
     >
       <h1>Projects</h1>
+      <h2 className="sr-only">Latest side projects</h2>
+
+      <Image
+        src="/static/projects-img.png"
+        layout="responsive"
+        width={5}
+        height={2}
+        alt=""
+      />
 
       <SearchInput
         name="search-project"

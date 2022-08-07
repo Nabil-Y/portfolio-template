@@ -6,17 +6,19 @@ const SingleProject = (props: Project) => {
   const { repoLink, demoLink, title, description, tags, imgLink } = props;
   return (
     <article>
-      <div className="my-10 overflow-hidden rounded-lg">
-        <Image
-          src={imgLink}
-          alt={`${title} demo`}
-          layout="responsive"
-          width={2}
-          height={1}
-        />
+      <div className="my-5 overflow-hidden rounded-lg">
+        {imgLink && (
+          <Image
+            src={imgLink}
+            alt={`${title} demo`}
+            layout="responsive"
+            width={2}
+            height={1}
+          />
+        )}
       </div>
 
-      <h2 className="my-4">{title}</h2>
+      <h3 className="my-4">{title}</h3>
       <div>
         {tags.map((tag) => (
           <Tag key={tag} content={tag} />
@@ -33,7 +35,9 @@ const SingleProject = (props: Project) => {
         </a>
       </div>
 
-      <p className="mt-6 mb-12 text-greyDark dark:text-grey">{description}</p>
+      {description && (
+        <p className="mt-6 mb-12 text-greyDark dark:text-grey">{description}</p>
+      )}
     </article>
   );
 };

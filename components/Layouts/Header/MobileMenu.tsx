@@ -15,6 +15,7 @@ const MobileMenu = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
+    document.body.classList.toggle("overflow-hidden");
   };
 
   return (
@@ -25,8 +26,18 @@ const MobileMenu = () => {
           className="cursor-pointer p-2"
           role={"button"}
         >
-          {!isMenuOpen && <HamburgerIcon />}
-          {isMenuOpen && <CloseIcon />}
+          {!isMenuOpen && (
+            <>
+              <HamburgerIcon />
+              <span className="sr-only"> Open Menu</span>
+            </>
+          )}
+          {isMenuOpen && (
+            <>
+              <CloseIcon />
+              <span className="sr-only"> Close Menu</span>
+            </>
+          )}
         </div>
       </nav>
       {isMenuOpen && (

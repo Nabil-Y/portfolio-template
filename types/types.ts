@@ -30,7 +30,7 @@ export interface BlogPostProps {
   };
 }
 
-export interface BlogHomePageProps {
+export interface PostsProps {
   posts: Record<string, string>[];
 }
 
@@ -50,8 +50,8 @@ export interface SinglePostProps {
 export interface Project {
   repoLink: string;
   demoLink: string;
-  imgLink: string;
+  imgLink?: string;
   title: string;
-  description: string;
+  description?: string;
   tags: string[];
 }
