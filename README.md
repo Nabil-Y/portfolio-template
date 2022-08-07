@@ -1,6 +1,6 @@
 # Nabil Yassine
 
-Web developer portfolio inspired by [Lee Robinson](leerob.io).
+Web developer portfolio inspired by [Lee Robinson](https://leerob.io).
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
