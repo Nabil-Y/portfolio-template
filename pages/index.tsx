@@ -26,7 +26,7 @@ const Home = (props: PostsProps) => {
         />
         <h2 className="pt-10">Latest Posts</h2>
         <Link href="/blog">
-          <span className="block cursor-pointer py-3 hover:text-primary">
+          <span className="block cursor-pointer py-3 hover:text-primaryDark dark:hover:text-primary">
             See all posts
           </span>
         </Link>
@@ -55,7 +55,7 @@ const Home = (props: PostsProps) => {
         <h2 className="pt-10">Latest projects</h2>
 
         <Link href="/projects">
-          <span className="block cursor-pointer pt-3 hover:text-primary">
+          <span className="block cursor-pointer pt-3 hover:text-primaryDark dark:hover:text-primary">
             See all projects
           </span>
         </Link>
