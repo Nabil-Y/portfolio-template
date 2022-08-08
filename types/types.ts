@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { Dispatch, ReactNode, SetStateAction } from "react";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
 
 export interface ButtonProps {
@@ -54,4 +54,9 @@ export interface Project {
   title: string;
   description?: string;
   tags: string[];
+}
+
+export interface MobileMenuProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
 }

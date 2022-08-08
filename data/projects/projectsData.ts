@@ -2,6 +2,15 @@ import { Project } from "../../types/types";
 
 export const projectsData: Project[] = [
   {
+    repoLink: "https://github.com/Nabil-Y/personal-website",
+    demoLink: "https://nabil-y.com",
+    imgLink: "/static/projects/personal-website.jpg",
+    title: "My personal website",
+    description:
+      "Created a personal website to use as a portfolio/blog, learning a lot about Next, MDX in the process.",
+    tags: ["Next", "TypeScript", "MDX", "TailwindCSS"],
+  },
+  {
     repoLink: "Nabil_Yassine_14_13062022",
     demoLink: "https://nabil-yassine-14-13062022.vercel.app/",
     imgLink: "/static/projects/hrnet.jpg",
@@ -18,15 +27,6 @@ export const projectsData: Project[] = [
     description:
       "Created a React library to display data tables with search, filter, sorting, pages.",
     tags: ["React", "TypeScript", "NPM", "Vite", "Vitest"],
-  },
-  {
-    repoLink: "https://github.com/Nabil-Y/personal-website",
-    demoLink: "https://nabil-y.com",
-    imgLink: "/static/projects/personal-website.jpg",
-    title: "My personal website",
-    description:
-      "Created a personal website to use as a portfolio/blog, learning a lot about Next, MDX in the process.",
-    tags: ["Next", "TypeScript", "MDX", "TailwindCSS"],
   },
   {
     repoLink: "https://github.com/Nabil-Y/flagApi-react-vite-Tailwind",

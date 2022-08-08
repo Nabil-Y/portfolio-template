@@ -1,9 +1,11 @@
 import Head from "next/head";
+import { useState } from "react";
 import { BaseContainerProps } from "../../types/types";
 import Header from "./Header/Header";
 
 const BaseContainer = (props: BaseContainerProps) => {
   const { children, ...customMeta } = props;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const meta = {
     title: "Home - Nabil Yassine",
@@ -38,8 +40,10 @@ const BaseContainer = (props: BaseContainerProps) => {
         <meta name="twitter:image" content={meta.image} />
       </Head>
 
-      <Header />
-      <main id="skipNav">{children}</main>
+      <Header menuState={{ isMenuOpen, setIsMenuOpen }} />
+      <main id="skipNav" className={isMenuOpen ? "hidden" : ""}>
+        {children}
+      </main>
     </>
   );
 };

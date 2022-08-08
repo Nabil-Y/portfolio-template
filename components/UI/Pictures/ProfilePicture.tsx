@@ -5,10 +5,11 @@ const ProfileIcon = () => {
     <div className=" h-12 w-12 overflow-hidden rounded-full">
       <Image
         src="/static/nabil.png"
-        alt="Nabil Yassine Illustration"
+        alt=""
         layout="responsive"
         width={1}
         height={1}
+        aria-hidden="true"
       />
     </div>
   );

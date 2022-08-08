@@ -5,7 +5,7 @@ import BaseContainer from "../../components/Layouts/BaseContainer";
 import { PostsProps } from "../../types/types";
 import SearchInput from "../../components/Inputs/SearchInput";
 import SinglePost from "../../components/Blocks/SinglePost";
-import Image from "next/image";
+import BlogPicture from "../../components/UI/Pictures/BlogPicture";
 
 const BlogHomePage = (props: PostsProps) => {
   const { posts } = props;
@@ -25,13 +25,7 @@ const BlogHomePage = (props: PostsProps) => {
       <h1>Blog</h1>
       <h2 className="sr-only">Latest posts</h2>
 
-      <Image
-        src="/static/blog-img.png"
-        layout="responsive"
-        width={5}
-        height={2}
-        alt=""
-      />
+      <BlogPicture />
 
       <SearchInput
         name="search-blog-post"

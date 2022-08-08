@@ -7,9 +7,19 @@ const Presentation = () => {
         JavaScript and React.
       </p>
       <div>
-        Contact me on <a href="https://github.com/Nabil-Y">GitHub</a>,{" "}
-        <a href="https://twitter.com/nabil_io">Twitter</a> or{" "}
-        <a href="https://www.linkedin.com/in/nabil-yassine-0a5262226/">
+        Contact me on{" "}
+        <a href="https://github.com/Nabil-Y" className="underline">
+          GitHub
+        </a>
+        {", "}
+        <a href="https://twitter.com/nabil_io" className="underline">
+          Twitter
+        </a>
+        {" or "}
+        <a
+          href="https://www.linkedin.com/in/nabil-yassine-0a5262226/"
+          className="underline"
+        >
           Linkedin
         </a>
       </div>

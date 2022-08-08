@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    @apply animate-appear bg-white font-sora text-sm text-black dark:bg-black dark:text-white sm:text-base;
+    @apply animate-appear bg-white font-sora text-sm text-black  dark:bg-black dark:text-white sm:text-base;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -45,6 +45,12 @@
   .prose li a {
     @apply my-0;
   }
+}
+
+a,
+input,
+button {
+  @apply focus:outline focus:outline-secondaryDark dark:focus:outline dark:focus:outline-secondary;
 }
 
 .code-highlight {

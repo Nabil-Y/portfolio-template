@@ -11,10 +11,11 @@ const SingleProject = (props: Project) => {
           {imgLink && (
             <Image
               src={imgLink}
-              alt={`${title} demo`}
+              alt=""
               layout="responsive"
               width={2}
               height={1}
+              aria-hidden="true"
             />
           )}
         </div>
@@ -29,12 +30,14 @@ const SingleProject = (props: Project) => {
         ))}
       </div>
 
-      <div className="mt-2 underline">
-        <div className="mr-2 inline-block">Visit</div>
-        <a href={repoLink} className="mr-2">
+      <div className="mt-2">
+        {"Visit"}
+        <a href={repoLink} className="mx-2 underline">
           Repository
         </a>
-        <a href={demoLink}>Live Demo</a>
+        <a href={demoLink} className="underline">
+          Live Demo
+        </a>
       </div>
 
       {description && (

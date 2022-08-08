@@ -13,7 +13,9 @@ const HeaderNav = () => {
       <ul className="flex">
         {Object.keys(navTitles).map((title) => (
           <Link key={title} href={navTitles[title]}>
-            <li>{title}</li>
+            <a className="hover:text-current dark:hover:text-current">
+              <li>{title}</li>
+            </a>
           </Link>
         ))}
       </ul>

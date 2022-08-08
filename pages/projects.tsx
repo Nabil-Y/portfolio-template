@@ -3,7 +3,7 @@ import BaseContainer from "../components/Layouts/BaseContainer";
 import SearchInput from "../components/Inputs/SearchInput";
 import { projectsData } from "../data/projects/projectsData";
 import SingleProject from "../components/Blocks/SingleProject";
-import Image from "next/image";
+import ProjectsPicture from "../components/UI/Pictures/ProjectsPicture";
 
 const ProjectsPage = () => {
   const [query, setQuery] = useState("");
@@ -25,13 +25,7 @@ const ProjectsPage = () => {
       <h1>Projects</h1>
       <h2 className="sr-only">Latest side projects</h2>
 
-      <Image
-        src="/static/projects-img.png"
-        layout="responsive"
-        width={5}
-        height={2}
-        alt=""
-      />
+      <ProjectsPicture />
 
       <SearchInput
         name="search-project"

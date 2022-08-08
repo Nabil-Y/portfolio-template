@@ -4,17 +4,19 @@ import Link from "next/link";
 const SinglePost = (props: SinglePostProps) => {
   const { title, readingTime, description, slug } = props;
   return (
-    <article className="py-3">
-      <div className="flex items-center justify-between py-3">
-        <h3>
-          <Link href={`blog/${slug}`}>{title}</Link>
-        </h3>
-
-        <div className="text-greyDark dark:text-grey">{readingTime}</div>
-      </div>
-
-      <p className="text-greyDark dark:text-grey">{description}</p>
-    </article>
+    <Link href={`blog/${slug}`}>
+      <a className="block">
+        <article className="group cursor-pointer py-3">
+          <div className="flex items-center justify-between py-3">
+            <h3 className="group-hover:text-primary">{title}</h3>
+            <div className="text-greyDark dark:text-grey">{readingTime}</div>
+          </div>
+          <p className="font-normal text-greyDark dark:text-grey">
+            {description}
+          </p>
+        </article>
+      </a>
+    </Link>
   );
 };
 

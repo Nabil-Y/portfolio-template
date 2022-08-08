@@ -18,7 +18,7 @@ const SearchInput = (props: SearchInputProps) => {
         onChange={onChange}
         name={name}
         placeholder="Search..."
-        className="w-full rounded-lg border-2 border-grey  p-3 pr-12 caret-inherit outline-none"
+        className="w-full rounded-lg border-2 border-grey  p-3 pr-12 caret-inherit"
       />
       <div className="absolute right-3 top-auto">
         <SearchIcon />
