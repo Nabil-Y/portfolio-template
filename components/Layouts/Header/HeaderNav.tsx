@@ -14,7 +14,7 @@ const HeaderNav = () => {
         {Object.keys(navTitles).map((title) => (
           <li key={title}>
             <Link href={navTitles[title]}>
-              <a className="hover:text-current dark:hover:text-current">
+              <a className="block hover:text-current dark:hover:text-current">
                 {title}
               </a>
             </Link>
