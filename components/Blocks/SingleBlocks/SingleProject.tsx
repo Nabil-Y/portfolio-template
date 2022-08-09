@@ -7,8 +7,8 @@ const SingleProject = (props: Project) => {
   return (
     <article>
       <a href={repoLink} className="group block">
-        <div className="my-5 overflow-hidden rounded-lg">
-          {imgLink && (
+        {imgLink && (
+          <div className="my-5 overflow-hidden rounded-lg">
             <Image
               src={imgLink}
               alt=""
@@ -17,8 +17,9 @@ const SingleProject = (props: Project) => {
               height={1}
               aria-hidden="true"
             />
-          )}
-        </div>
+          </div>
+        )}
+
         <h3 className="my-4 group-hover:text-primaryDark dark:group-hover:text-primary">
           {title}
         </h3>
