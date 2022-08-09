@@ -2,7 +2,7 @@ import { useState } from "react";
 import BaseContainer from "../components/Layouts/BaseContainer";
 import SearchInput from "../components/Inputs/SearchInput";
 import { projectsData } from "../data/projects/projectsData";
-import SingleProject from "../components/Blocks/SingleProject";
+import SingleProject from "../components/Blocks/SingleBlocks/SingleProject";
 import ProjectsPicture from "../components/UI/Pictures/ProjectsPicture";
 
 const ProjectsPage = () => {

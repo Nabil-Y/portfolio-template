@@ -27,7 +27,7 @@ const BlogPost = (props: BlogPostProps) => {
           </div>
         )}
 
-        <div className="prose pt-12 dark:prose-invert">
+        <div className="prose-sm pt-12 dark:prose-invert sm:prose">
           <MDXRemote {...html} components={components} />
         </div>
       </article>

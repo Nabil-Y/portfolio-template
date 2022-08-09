@@ -4,7 +4,7 @@ import { getAllPostsSorted } from "../../libs/posts";
 import BaseContainer from "../../components/Layouts/BaseContainer";
 import { PostsProps } from "../../types/types";
 import SearchInput from "../../components/Inputs/SearchInput";
-import SinglePost from "../../components/Blocks/SinglePost";
+import SinglePost from "../../components/Blocks/SingleBlocks/SinglePost";
 import BlogPicture from "../../components/UI/Pictures/BlogPicture";
 
 const BlogHomePage = (props: PostsProps) => {

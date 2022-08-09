@@ -1,6 +1,6 @@
-import { Project } from "../../types/types";
+import { Project } from "../../../types/types";
 import Image from "next/image";
-import Tag from "../UI/Tag";
+import Tag from "../../UI/Tag";
 
 const SingleProject = (props: Project) => {
   const { repoLink, demoLink, title, description, tags, imgLink } = props;

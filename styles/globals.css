@@ -50,11 +50,7 @@
 a,
 input,
 button {
-  @apply focus:outline focus:outline-secondaryDark dark:focus:outline dark:focus:outline-secondary;
-}
-
-.code-highlight {
-  @apply text-xs sm:text-base;
+  @apply focus-visible:outline focus-visible:outline-secondaryDark dark:focus-visible:outline dark:focus-visible:outline-secondary;
 }
 
 .rehype-code-title {

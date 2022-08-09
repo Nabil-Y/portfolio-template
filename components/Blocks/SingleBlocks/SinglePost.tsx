@@ -1,4 +1,4 @@
-import { SinglePostProps } from "../../types/types";
+import { SinglePostProps } from "../../../types/types";
 import Link from "next/link";
 
 const SinglePost = (props: SinglePostProps) => {

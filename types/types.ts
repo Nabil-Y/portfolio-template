@@ -57,6 +57,8 @@ export interface Project {
 }
 
 export interface MobileMenuProps {
-  isMenuOpen: boolean;
-  setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
+  menuState: {
+    isMenuOpen: boolean;
+    setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
+  };
 }

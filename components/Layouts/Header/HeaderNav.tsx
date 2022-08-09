@@ -12,11 +12,13 @@ const HeaderNav = () => {
     <nav className="hidden sm:block">
       <ul className="flex">
         {Object.keys(navTitles).map((title) => (
-          <Link key={title} href={navTitles[title]}>
-            <a className="hover:text-current dark:hover:text-current">
-              <li>{title}</li>
-            </a>
-          </Link>
+          <li key={title}>
+            <Link href={navTitles[title]}>
+              <a className="hover:text-current dark:hover:text-current">
+                {title}
+              </a>
+            </Link>
+          </li>
         ))}
       </ul>
     </nav>
