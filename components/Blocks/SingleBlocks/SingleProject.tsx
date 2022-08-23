@@ -5,7 +5,7 @@ import Tag from "../../UI/Tag";
 const SingleProject = (props: Project) => {
   const { repoLink, demoLink, title, description, tags, imgLink } = props;
   return (
-    <article>
+    <article className="pt-8 sm:pt-12">
       {imgLink && (
         <div className="my-5 overflow-hidden rounded-lg">
           <Image
@@ -38,7 +38,7 @@ const SingleProject = (props: Project) => {
       </div>
 
       {description && (
-        <p className="mt-6 mb-12 text-greyDark dark:text-grey">{description}</p>
+        <p className="pt-6 pb-3 text-greyDark dark:text-grey">{description}</p>
       )}
     </article>
   );

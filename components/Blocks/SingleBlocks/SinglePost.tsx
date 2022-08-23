@@ -5,7 +5,7 @@ const SinglePost = (props: SinglePostProps) => {
   const { title, readingTime, description, slug } = props;
   return (
     <Link href={`blog/${slug}`}>
-      <a className="block">
+      <a className="block pt-3 sm:pt-6">
         <article className="group cursor-pointer py-3">
           <div className="flex items-center justify-between py-3">
             <h3 className="group-hover:text-primary">{title}</h3>
