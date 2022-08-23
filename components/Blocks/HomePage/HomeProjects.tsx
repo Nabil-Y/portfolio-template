@@ -16,7 +16,7 @@ const HomeProjects = () => {
       </Link>
 
       {projectsData.slice(0, 3).map((project) => (
-        <div key={project.title}>
+        <div key={project.title} className="mt-12">
           <SingleProject
             title={project.title}
             tags={project.tags}

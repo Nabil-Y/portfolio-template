@@ -6,24 +6,20 @@ const SingleProject = (props: Project) => {
   const { repoLink, demoLink, title, description, tags, imgLink } = props;
   return (
     <article>
-      <a href={repoLink} className="group block">
-        {imgLink && (
-          <div className="my-5 overflow-hidden rounded-lg">
-            <Image
-              src={imgLink}
-              alt=""
-              layout="responsive"
-              width={2}
-              height={1}
-              aria-hidden="true"
-            />
-          </div>
-        )}
+      {imgLink && (
+        <div className="my-5 overflow-hidden rounded-lg">
+          <Image
+            src={imgLink}
+            alt=""
+            layout="responsive"
+            width={2}
+            height={1}
+            aria-hidden="true"
+          />
+        </div>
+      )}
 
-        <h3 className="my-4 group-hover:text-primaryDark dark:group-hover:text-primary">
-          {title}
-        </h3>
-      </a>
+      <h3 className="my-4">{title}</h3>
 
       <div>
         {tags.map((tag) => (

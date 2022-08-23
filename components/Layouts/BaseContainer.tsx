@@ -8,9 +8,9 @@ const BaseContainer = (props: BaseContainerProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const meta = {
-    title: "Home - Nabil Yassine",
+    title: "Nabil Yassine - Frontend developer",
     description:
-      "Front-end developer, React and TypeScript enthusiast, I talk about web dev",
+      "Frontend developer, React and TypeScript enthusiast, I talk about web dev",
     image: "https://nabil-y.com/static/nabil_irl.jpg",
     type: "website",
     ...customMeta,
