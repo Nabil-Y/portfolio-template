@@ -2,7 +2,7 @@
 
 Build a SEO-friendly blog/portfolio in less than 10 minutes with this template.
 
-Built with Next.js, TypeScript and TailwindCSS. Demo deployed on Vercel.
+Built with Next.js, TypeScript and TailwindCSS. [Live Demo](https://portfolio-template-amber.vercel.app/) deployed on Vercel.
 
 Please star this project if it was helpful!
 
