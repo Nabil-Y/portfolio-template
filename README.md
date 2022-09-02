@@ -37,6 +37,11 @@ Write your name in :
 1. `/pages/index.tsx` : Line 13
 1. `/pages/blog/[slug].tsx`: Line 26
 
+Change GitHub, Twitter, Linkedin links in:
+
+1. `/components/Blocks/HomePage/Presentation.tsx`: Lines 10 to 20
+1. `/data/posts/about.mdx`: At the end of the file
+
 For blog and projects:
 
 1. Complete your about page by editing `/data/posts/about.mdx`
