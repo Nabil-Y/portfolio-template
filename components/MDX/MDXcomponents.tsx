@@ -1,6 +1,6 @@
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 
-const ResponsiveImage = (props: any) => (
+const ResponsiveImage = (props: ImageProps) => (
   <Image alt={props.alt} layout="responsive" width={2} height={1} {...props} />
 );
 
