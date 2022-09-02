@@ -2,10 +2,15 @@ import { useState } from "react";
 import { GetStaticProps } from "next";
 import { getAllPostsSorted } from "../../libs/posts";
 import BaseContainer from "../../components/Layouts/BaseContainer";
-import { PostsProps } from "../../types/types";
+import { CustomMeta, PostsProps } from "../../types/types";
 import SearchInput from "../../components/Inputs/SearchInput";
 import SinglePost from "../../components/Blocks/SingleBlocks/SinglePost";
 import BlogPicture from "../../components/UI/Pictures/BlogPicture";
+
+const customMeta: Partial<CustomMeta> = {
+  title: "Blog",
+  description: "Here is my blog where I write about web development",
+};
 
 const BlogHomePage = (props: PostsProps) => {
   const { posts } = props;
@@ -18,10 +23,7 @@ const BlogHomePage = (props: PostsProps) => {
   );
 
   return (
-    <BaseContainer
-      title="Blog"
-      description="Here is my blog where I write about web development"
-    >
+    <BaseContainer {...customMeta}>
       <h1>Blog</h1>
       <h2 className="sr-only">Latest posts</h2>
 

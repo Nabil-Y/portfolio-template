@@ -15,6 +15,13 @@ export interface BaseContainerProps {
   type?: string;
 }
 
+export interface CustomMeta {
+  title: string;
+  description: string;
+  image: string;
+  date: string;
+}
+
 export interface BlogPostProps {
   children: ReactNode;
   html: MDXRemoteSerializeResult<
@@ -22,12 +29,7 @@ export interface BlogPostProps {
     Record<string, string>
   >;
   readingTime: string;
-  meta: {
-    title: string;
-    description: string;
-    image: string;
-    date: string;
-  };
+  meta: CustomMeta;
 }
 
 export interface PostsProps {
