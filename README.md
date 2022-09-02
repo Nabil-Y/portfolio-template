@@ -1,5 +1,9 @@
 # Portfolio template
 
+Build a SEO-friendly blog/portfolio in less than 10 minutes with this template.
+
+Built with Next.js, TypeScript and TailwindCSS. Demo deployed on Vercel.
+
 Please star this project if it was helpful!
 
 - **Framework**: [Next.js](https://nextjs.org/)
@@ -12,6 +16,14 @@ Template made from [my website](https://nabil-y.com)
 Inspired from [Lee Robinson](https://leerob.io).
 
 ## Tutorial
+
+### Use this template
+
+in your terminal, run this to clone the template:
+
+`git clone https://github.com/Nabil-Y/portfolio-template.git`
+
+To launch the development server, cd in the portfolio-template repository and run `yarn dev`
 
 ### Edit content
 
@@ -39,6 +51,8 @@ For blog and projects:
 - To change nav menu icon, replace `/public/static/icon.jpg` with another file with the same name or change the image source in `/components/UI/Pictures/ProfilePicture.tsx`
 - To change blog or project illustration, replace the files in `/public/static` or the sources in `/components/UI/Pictures/` just like nav menu icon
 
+**For projects and articles, use images with a width/height ratio of 2/1**
+
 ## Overview
 
 - `components/*` - Contains reusable components and page layouts.
@@ -50,12 +64,3 @@ For blog and projects:
 - `public/*` - Static assets including favicon and images.
 - `styles/*` - Global styles and Prism theme for code highligthing.
 - `types/*` - Custom types and interfaces, mostly for typing component props.
-
-## Running Locally
-
-```
-$ git clone `https://github.com/Nabil-Y/portfolio-template.git`
-$ cd personal-website
-$ yarn
-$ yarn dev
-```
