@@ -29,7 +29,7 @@ For blog and projects:
 
 1. Complete your about page by editing `/data/posts/about.mdx`
 1. Complete your first blog post by editing `/data/posts/my-first-article.mdx`
-1. To add more articles, add another file, add another mdx file in `/data/posts/` with same formatting as `my-first-article.mdx`
+1. To add more articles, add another mdx file in `/data/posts/` with same formatting as `my-first-article.mdx`. The name of the file must be identical to the slug key with `.mdx` at the end.
 1. Add projects data by editing `/data/projects/projectsData.ts` with same formatting as the two first projects.
 
 ### Change styles and images
