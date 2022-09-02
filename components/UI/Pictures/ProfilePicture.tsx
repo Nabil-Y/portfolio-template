@@ -4,7 +4,7 @@ const ProfileIcon = () => {
   return (
     <div className=" h-12 w-12 overflow-hidden rounded-full">
       <Image
-        src="/static/nabil.png"
+        src="/static/icon.jpg"
         alt=""
         layout="responsive"
         width={1}

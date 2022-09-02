@@ -1,11 +1,43 @@
-# Nabil Yassine
+# Portfolio template
 
-Web developer portfolio inspired by [Lee Robinson](https://leerob.io).
+Please star this project if it was helpful!
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
 - **Blog**: [MDX](https://mdxjs.com/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+
+Template made from [my website](https://nabil-y.com)
+
+Inspired from [Lee Robinson](https://leerob.io).
+
+## Tutorial
+
+### Edit content
+
+In `/components/Layouts/BaseContainer.tsx` and edit:
+
+1. Your base meta data in const meta, line 10
+1. Replace your name in lines 25, 31, 37.
+
+Write your name in :
+
+1. `/pages/index.tsx` : Line 13
+1. `/pages/blog/[slug].tsx`: Line 26
+
+For blog and projects:
+
+1. Complete your about page by editing `/data/posts/about.mdx`
+1. Complete your first blog post by editing `/data/posts/my-first-article.mdx`
+1. To add more articles, add another file, add another mdx file in `/data/posts/` with same formatting as `my-first-article.mdx`
+1. Add projects data by editing `/data/projects/projectsData.ts` with same formatting as the two first projects.
+
+### Change styles and images
+
+- To change the font, you can import another font at the top of `/styles/globals.css` and add it `/tailwind.config.js`
+- To change colors, edit them in `/tailwind.config.js`
+- To change nav menu icon, replace `/public/static/icon.jpg` with another file with the same name or change the image source in `/components/UI/Pictures/ProfilePicture.tsx`
+- To change blog or project illustration, replace the files in `/public/static` or the sources in `/components/UI/Pictures/` just like nav menu icon
 
 ## Overview
 
@@ -22,12 +54,8 @@ Web developer portfolio inspired by [Lee Robinson](https://leerob.io).
 ## Running Locally
 
 ```
-$ git clone https://github.com/Nabil-Y/personal-website.git
+$ git clone `https://github.com/Nabil-Y/portfolio-template.git`
 $ cd personal-website
 $ yarn
 $ yarn dev
 ```
-
-## Cloning / Forking
-
-Please remove all my personal information (blog posts, images, etc).

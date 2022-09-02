@@ -19,8 +19,8 @@ const BlogHomePage = (props: PostsProps) => {
 
   return (
     <BaseContainer
-      title="Blog - Nabil Yassine"
-      description="Here is my blog where I write about React, TypeScript, frontend and all things web dev"
+      title="Blog"
+      description="Here is my blog where I write about web development"
     >
       <h1>Blog</h1>
       <h2 className="sr-only">Latest posts</h2>

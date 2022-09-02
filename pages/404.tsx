@@ -3,7 +3,7 @@ import BaseContainer from "../components/Layouts/BaseContainer";
 
 const ErrorPage = () => {
   return (
-    <BaseContainer>
+    <BaseContainer title="Error" description="Content not found">
       <h1>Error 404</h1>
       <h2>Content not found</h2>
       <Link href="/">

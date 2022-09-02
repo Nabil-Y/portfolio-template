@@ -12,7 +12,7 @@ const BlogPost = (props: BlogPostProps) => {
 
   return (
     <BaseContainer
-      title={`${title} – Nabil Yassine`}
+      title={title}
       description={description}
       image={image}
       date={new Date(date).toLocaleDateString()}
@@ -23,7 +23,7 @@ const BlogPost = (props: BlogPostProps) => {
 
         {title !== "About me" && (
           <div className="flex justify-between text-greyDark dark:text-grey">
-            <div>Nabil-Y / {date}</div> <div>{readingTime}</div>
+            <div>My Name / {date}</div> <div>{readingTime}</div>
           </div>
         )}
 

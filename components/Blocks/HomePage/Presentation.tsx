@@ -8,18 +8,15 @@ const Presentation = () => {
       </p>
       <div>
         Contact me on{" "}
-        <a href="https://github.com/Nabil-Y" className="underline">
+        <a href="https://github.com/" className="underline">
           GitHub
         </a>
         {", "}
-        <a href="https://twitter.com/nabil_io" className="underline">
+        <a href="https://twitter.com/" className="underline">
           Twitter
         </a>
         {" or "}
-        <a
-          href="https://www.linkedin.com/in/nabil-yassine-0a5262226/"
-          className="underline"
-        >
+        <a href="https://www.linkedin.com/" className="underline">
           Linkedin
         </a>
       </div>

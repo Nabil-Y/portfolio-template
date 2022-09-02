@@ -34,10 +34,3 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/typography")],
 };
-
-// Colors
-// primary: "#F472B6", pink
-// secondary: "#38BDF8", blue
-// black: "#171717",
-// white: "#F8FAFC",
-// grey: "#94A3B8",
