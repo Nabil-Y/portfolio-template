@@ -13,7 +13,7 @@ Please star this project if it was helpful!
 
 Template made from [my website](https://nabil-y.com)
 
-Inspired from [Lee Robinson](https://leerob.io).
+Inspired by [Lee Robinson](https://leerob.io).
 
 ## Tutorial
 
