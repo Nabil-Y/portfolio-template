@@ -9,7 +9,7 @@ const SinglePost = (props: SinglePostProps) => {
         <article className="group cursor-pointer py-3">
           <div className="flex items-center justify-between py-3">
             <h3 className="group-hover:text-primary">{title}</h3>
-            <div className="text-greyDark dark:text-grey">{readingTime}</div>
+            <div className="min-w-[100px] text-right text-greyDark dark:text-grey">{readingTime}</div>
           </div>
           <p className="font-normal text-greyDark dark:text-grey">
             {description}
