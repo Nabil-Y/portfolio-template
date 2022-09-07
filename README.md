@@ -55,6 +55,7 @@ For blog and projects:
 - To change colors, edit them in `/tailwind.config.js`
 - To change nav menu icon, replace `/public/static/icon.jpg` with another file with the same name or change the image source in `/components/UI/Pictures/ProfilePicture.tsx`
 - To change blog or project illustration, replace the files in `/public/static` or the sources in `/components/UI/Pictures/` just like nav menu icon
+- To change code style in articles, replace `/styles/prism-theme.css` content with any of the [prism themes here](https://github.com/PrismJS/prism-themes/blob/master/README.md)
 
 **For projects and articles, use images with a width/height ratio of 2/1**
 
