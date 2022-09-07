@@ -35,11 +35,11 @@
   }
 
   a {
-    @apply inline-block font-bold hover:text-primaryDark dark:hover:text-primary;
+    @apply inline-block font-bold underline hover:text-primaryDark dark:hover:text-primary;
   }
 
   nav li a {
-    @apply mr-1 cursor-pointer rounded-lg p-4 font-bold hover:bg-greyLight dark:hover:bg-greyDark;
+    @apply mr-1 cursor-pointer rounded-lg p-4 font-bold no-underline hover:bg-greyLight dark:hover:bg-greyDark;
   }
 
   .prose li a {
