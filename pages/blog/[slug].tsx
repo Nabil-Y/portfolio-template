@@ -39,7 +39,7 @@ export const getStaticPaths: GetStaticPaths = () => {
   const paths = getAllPostsPaths();
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 };
 
